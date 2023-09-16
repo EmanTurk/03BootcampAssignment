@@ -1,0 +1,222 @@
+body{
+    background: linear-gradient(to bottom right,magenta,cyan);
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+body {
+    background: linear-gradient(to bottom right, magenta, cyan);
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner, .single-spinner {
+    height: 120px;
+    width: 120px;
+    border: 6px white solid;
+    border-color: white transparent white transparent;
+    border-radius: 50%;
+    animation: spin 3s linear infinite;
+}
+
+.single-spinner {
+    border-color: transparent white transparent transparent; 
+    animation: spinSingle 1s linear infinite; 
+    margin-left: 100px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinSingle {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-dots {
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 5px;
+    animation: colorShift 1s linear infinite;
+    margin-left: 100px;
+}
+
+@keyframes colorShift {
+    0% {
+        background-color: white;
+    }
+    10% {
+        background-color: rgb(199, 23, 94);
+    }
+    50% {
+        background-color: white;
+    }
+    100% {
+        background-color: white;
+    }
+}
+/* Define the keyframes for dot appearance and disappearance */
+@keyframes dot1-appear {
+    0%, 20% {
+        opacity: 0;
+    }
+    25%, 100% {
+        opacity: 1;
+    }
+}
+
+@keyframes dot1-disappear {
+    0%, 20% {
+        opacity: 1;
+    }
+    25%, 100% {
+        opacity: 0;
+    }
+}
+
+@keyframes dot2-appear {
+    0%, 40% {
+        opacity: 0;
+    }
+    45%, 100% {
+        opacity: 1;
+    }
+}
+
+@keyframes dot2-disappear {
+    0%, 40% {
+        opacity: 1;
+    }
+    45%, 100% {
+        opacity: 0;
+    }
+}
+
+@keyframes dot3-appear {
+    0%, 60% {
+        opacity: 0;
+    }
+    65%, 100% {
+        opacity: 1;
+    }
+}
+
+@keyframes dot3-disappear {
+    0%, 60% {
+        opacity: 1;
+    }
+    65%, 100% {
+        opacity: 0;
+    }
+}
+
+.dot1, .dot2, .dot3 {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(140, 0, 234);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 60px;
+}
+
+/* ... Previous CSS code ... */
+
+/* Define the keyframes for dot appearance and disappearance */
+@keyframes dot1-appear {
+    0%, 20% {
+        opacity: 0;
+    }
+    25%, 100% {
+        opacity: 1;
+    }
+}
+
+@keyframes dot1-disappear {
+    0%, 20% {
+        opacity: 1;
+    }
+    25%, 100% {
+        opacity: 0;
+    }
+}
+
+@keyframes dot2-appear {
+    0%, 40% {
+        opacity: 0;
+    }
+    45%, 100% {
+        opacity: 1;
+    }
+}
+
+@keyframes dot2-disappear {
+    0%, 40% {
+        opacity: 1;
+    }
+    45%, 100% {
+        opacity: 0;
+    }
+}
+
+@keyframes dot3-appear {
+    0%, 60% {
+        opacity: 0;
+    }
+    65%, 100% {
+        opacity: 1;
+    }
+}
+
+@keyframes dot3-disappear {
+    0%, 60% {
+        opacity: 1;
+    }
+    65%, 100% {
+        opacity: 0;
+    }
+}
+
+.dot1, .dot2, .dot3 {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(140, 0, 234);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 60px;
+}
+
+.dot1 {
+    animation: dot1-appear 1s ease-in-out infinite, dot1-disappear 1.5s ease-in-out infinite 1.5s;
+}
+
+.dot2 {
+    animation: dot2-appear 2s ease-in-out infinite, dot2-disappear 1.5s ease-in-out infinite 1.5s;
+}
+
+.dot3 {
+    animation: dot3-appear 2s ease-in-out infinite, dot3-disappear 1.5s ease-in-out infinite 1.5s;
+}
+
+
