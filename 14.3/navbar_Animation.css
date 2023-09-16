@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
+}
+body{
+  min-height: 100vh;
+    background: url(./assest/edited\ by\ emilyabarca3🕯.jpeg), no-repeat, 100vh;
+    background-size: center;
+}
+
+   .contanier{
+    display: flex;
+    align-items: center;
+    padding-left: 40%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(165, 165, 165);
+    align-content: center;
+  
+   }
+
+.nav a {
+    position: relative;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+}
+
+.nav a::before,
+.nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: .3s;
+}
+
+.nav a::before {
+    top: 100%;
+    left: 0;
+}
+
+.nav a::after {
+    bottom: 100%;
+    left: 0;
+}
+
+.nav a:hover::before,
+.nav a:hover::after {
+    width: 100%;
+}
+
